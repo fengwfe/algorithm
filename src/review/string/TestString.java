@@ -24,15 +24,11 @@ import java.util.*;
  */
 public class TestString {
     public static void main(String[] args) {
-//        System.out.println(reverseWord("hello fuwu  "));
-//        multiply("99", "99");
-        Queue<Integer> queue = new LinkedList<>();
-        queue.offer(1);
-        queue.offer(2);
-        System.out.println(queue.peek());
-        while (!queue.isEmpty()){
-            System.out.println(queue.poll());
-        }
+//        String s1 = "zabcde";
+//        String s2 = "a2c1d2e";//acez
+//        System.out.println(lcs(s1,s2,s1.length() - 1, s2.length() - 1, new HashMap<>()));
+        multiply("66","6");
+
     }
 
     /**
