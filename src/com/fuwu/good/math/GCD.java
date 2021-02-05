@@ -1,4 +1,4 @@
-package c1;
+package com.fuwu.good.math;
 
 public class GCD {
 

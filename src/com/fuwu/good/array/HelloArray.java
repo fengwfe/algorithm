@@ -7,6 +7,8 @@ import java.util.Arrays;
  * 2.移除元素
  * 3.two sum问题
  * 4.three sum 问题
+ * 5.merge two sorted array
+ * 6.数组中有多少个子数组满足子数组的和为target
  */
 public class HelloArray {
   public static void main(String[] args) {
@@ -107,6 +109,69 @@ public class HelloArray {
             }
         }
         return false;
+    }
+
+    /**
+     * 5.merge two sorted array
+     * @param a1
+     * @param a2
+     * @return
+     */
+    public static int[] merge(int[] a1, int[] a2){
+        if(null == a1){
+            return a2;
+        }
+        if(null == a2){
+            return a1;
+        }
+        int[] result = new int[a1.length + a2.length];
+        int i1 = 0;
+        int i2 = 0;
+        for(int i = 0; i < result.length ; i++){
+            if(i1 >= a1.length){
+                result[i] = a2[i2++];
+            }else if(i2 >= a2.length){
+                result[i] = a1[i1++];
+            }else if(a1[i1] < a2[i2]){
+                result[i] = a1[i1++];
+            }else {
+                result[i] = a2[i2++];
+            }
+        }
+        return result;
+    }
+
+    /**
+     * 6.数组中有多少个子数组满足子数组的和为target
+     * @param data
+     * @param target
+     * @return
+     */
+    public static int numOfTargetSum(int[] data, int target){
+        int count = 0;
+        int[] preSum = new int[data.length];//储存[0 - i]之间的元素的和
+        for(int i = 0; i < data.length; i++){
+            if(i == 0){
+                preSum[i] = data[i];
+            }else{
+                preSum[i] = preSum[i - 1] + data[i];
+            }
+        }
+        for(int i = 0; i < data.length; i++){
+            for(int j = i; j < data.length; j++){
+                int sum = 0;
+                if(i == 0){
+                    sum = preSum[j];
+                }else {
+                    sum = preSum[j] - preSum[i - 1];
+                }
+                if(sum == target){
+                    count++;
+                }
+            }
+
+        }
+        return count;
     }
 
 

@@ -1,4 +1,4 @@
-package sort;
+package com.fuwu.good.sort;
 
 import common.ArrayUtil;
 

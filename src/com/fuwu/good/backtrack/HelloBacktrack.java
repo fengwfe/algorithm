@@ -1,11 +1,18 @@
-package c2;
+package com.fuwu.good.backtrack;
 
-public class Bag {
-    public static void main(String[] args) {
-        System.out.println(maxProfit(new int[]{2,1,3}, new int[]{4,2,3}, 4, 2));
+/**
+ * 1.背包问题
+ */
+public class HelloBacktrack {
 
-    }
-
+    /**
+     *  1.背包问题
+     * @param ws
+     * @param vs
+     * @param capacity
+     * @param i
+     * @return
+     */
     public static int maxProfit(int[] ws, int[] vs, int capacity, int  i){
         if(i  < 0){
             return 0;

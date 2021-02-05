@@ -1,5 +1,9 @@
-package c1;
+package com.fuwu.good.dataStructure;
 
+/**
+ * 数组实现Stack
+ * @param <E>
+ */
 public class ArrayStack<E> {
     Object[] data = new Object[1];
     int size;

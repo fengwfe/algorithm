@@ -1,5 +1,9 @@
-package c1;
+package com.fuwu.good.dataStructure;
 
+/**
+ * 链表实现队列
+ * @param <E>
+ */
 public class LinkedListQueue<E> {
     Node<E> first;
     Node<E> last;

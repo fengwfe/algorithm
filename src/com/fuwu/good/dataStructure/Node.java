@@ -1,4 +1,4 @@
-package c1;
+package com.fuwu.good.dataStructure;
 
 public class Node <E>{
     E value;

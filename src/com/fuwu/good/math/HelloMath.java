@@ -1,14 +1,13 @@
-package c3.linkedList;
+package com.fuwu.good.math;
 
-public class UglyNum {
-    public static void main(String[] args) {
-        System.out.println(isUglyNum(7));
-        System.out.println(kthUglyNum(5));
-
-    }
+/**
+ * 1.判断是否为丑数
+ * 2.生成第K个丑数
+ */
+public class HelloMath {
 
     /**
-     *判断是否为丑数
+     * 1.判断是否为丑数
      */
     public static boolean isUglyNum(int num){
         if(num <= 0){
@@ -27,7 +26,7 @@ public class UglyNum {
     }
 
     /**
-     * gen kth ugly num
+     * 2.生成第K个丑数
      */
     public static int kthUglyNum(int k){
         int[] uglyNums = new int[k];
@@ -55,5 +54,4 @@ public class UglyNum {
         }
         return uglyNums[k - 1];
     }
-
 }

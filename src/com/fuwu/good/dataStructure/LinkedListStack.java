@@ -1,5 +1,9 @@
-package c1;
+package com.fuwu.good.dataStructure;
 
+/**
+ * 链表实现Stack
+ * @param <E>
+ */
 public class LinkedListStack<E> {
     Node<E> first;
     int size = 0;

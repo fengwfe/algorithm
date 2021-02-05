@@ -1,5 +1,9 @@
-package c1;
+package com.fuwu.good.dataStructure;
 
+/**
+ * 数组实现队列
+ * @param <E>
+ */
 public class ArrayQueue<E> {
 
     Object[] data = new Object[1];
