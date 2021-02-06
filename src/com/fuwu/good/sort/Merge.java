@@ -1,12 +1,8 @@
 package com.fuwu.good.sort;
 
-import common.ArrayUtil;
-
 public class Merge {
     public static void main(String[] args) {
-        int[] data = {0,0,13,2,9,6,33,1};
-        sort(data, 0, data.length  - 1);
-        ArrayUtil.print(data);
+
     }
     public static void sort(int[] data, int l, int h){
         if(l >= h){

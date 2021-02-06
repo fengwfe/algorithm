@@ -1,6 +1,6 @@
 package c3.linkedList;
 
-import common.TreeNode;
+import com.fuwu.good.common.TreeNode;
 
 import java.util.HashMap;
 import java.util.LinkedList;

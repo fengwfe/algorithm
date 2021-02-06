@@ -1,7 +1,5 @@
 package com.fuwu.good.sort;
 
-import common.ArrayUtil;
-
 public class Heap {
     public static void main(String[] args) {
         int[] data = {10, 0, 2, 6, 1 , 8};
